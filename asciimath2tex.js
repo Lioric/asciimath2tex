@@ -1,4 +1,5 @@
-export default class AsciiMathParser {
+(function() {
+      class AsciiMathParser {
     constructor() {
         this.decimalsign = '\\.';
 
@@ -941,3 +942,6 @@ export default class AsciiMathParser {
     }
 }
 
+window.MathParser = new AsciiMathParser();
+
+})();
